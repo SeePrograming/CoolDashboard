@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    min-height: 100vh;
+    /*    background: linear-gradient(to right, #232526, #414345);*/
+    background-color: #474658;
+}
+
+.mainContainer .row {
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    color: #ffffff;
+    padding: 15%;
+
+    font-size: 3vh;
+    letter-spacing: 1px;
+}
+
+.profile img {
+    width: 15%;
+}
+
+.menuList ul li:nth-child(1){
+    background: #343341;
+}
+
+.menuList ul li {
+    color: #ffffff;
+    padding: 5% 0px 2% 10%;
+    list-style: none;
+    font-size: 2vh;
+    width: 60%;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+/*    box-shadow: 0 8px 6px -6px black;*/
+    margin-top: 10px;
+    margin-left: 20px;
+/*    border: 1px solid #fff;*/
+}
+
+.menuList ul li i {
+    margin-right: 5px;
+}
+
+.menuList ul li:hover {
+    background: #343341;
+}
+
+.compTitle {
+    color: #fff;
+    margin: 40% 0px auto 18%;
+    letter-spacing: 8px;
+    font-size: 2vh;
+}
+
+.boxes {
+
+    margin: 9% 5% auto 5%;
+}
+
+.boxOne {
+    width: 100%;
+    height: 250px;
+    background: #343341;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+
+}
+
+
+.boxTwo {
+    width: 49%;
+    height: 220px;
+    margin-top: 2%;
+    background: #343341;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+
+}
+
+
+.boxThree {
+    width: 49%;
+    height: 220px;
+    margin: 2% 0px 0 2%;
+    background: #343341;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.statsData {
+    padding: 25px;
+    color: #fff;
+    font-size: 2vh;
+}
+
+
+.graphData {
+    padding: 25px;
+    color: #fff;
+    font-size: 2vh;
+}
+
+.chartHEight {
+    height: 100%;
+    width: 100%;
+
+}
+
+.mainData .count {
+    font-size: 3.5vh;
+    margin-top: 15px;
+}
+
+
+.cTitle {
+    margin-top: 15px;
+}
+
+.stars {
+    margin-top: 5px;
+    font-size: 2vh;
+
+
+}
+
+#firstSpan {
+    color: #00AEEF;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.positivereview {
+    width: 50%;
+    float: left;
+
+}
+
+.positivereview span {
+    color: coral;
+}
+
+.negativeReview {
+    width: 50%;
+    float: right;
+}
+
+.negativeReview span {
+    color: #00AEEF;
+}
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+    stroke: #00AEEF;
+}
+
+.ct-series-a .ct-point {
+    /* Colour of your points */
+    stroke: #fff;
+    /* Size of your points */
+    /*  stroke-width: 10px;*/
+    /* Make your points appear as squares */
+    stroke-linecap: circle;
+}
+
+
+.ct-grid {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 1px;
+    stroke-dasharray: 1px;
+}
+
+.ct-label {
+    color: #fff;
+}
+
+
+
+
+.containerOne {
+    margin: 20px auto 20px 0px;
+}
+
+.containerOne .containerMain {
+    float: left;
+    width: 50%;
+}
+
+.containerOne .containerData {
+    float: right;
+    width: 50%;
+}
+
+
+#container,
+#container2 {
+    width: 50px;
+    height: 50px;
+}
+
+.containerData span {
+    color: coral;
+}
+
+.graphdataTwo {
+    margin-top: 20px;
+    padding: 25px;
+    font-size: 2vh;
+}
+
+.containerMain2 {
+    float: left;
+    width: 50%;
+}
+
+.containerData2 span {
+    color: #00AEEF;
+}
+
+.dta2 {
+    color: #fff;
+}
+
+.fa-star:nth-child(1),
+.fa-star:nth-child(2),
+.fa-star:nth-child(3) {
+    color: gold;
+}

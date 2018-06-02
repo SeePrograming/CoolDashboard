@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="chartVendor/chartist.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+      //Main container
+    <div class="mainContainer" id="bodyOne">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile">
+                    <img src="images/avatar1.png" alt="">SAGAR SHELKE
+                </div>
+                <div class="menuList">
+                    <ul>
+
+                        <li id="one"><i class="fas fa-tachometer-alt"></i> DASHBOARD</li>
+                        <li><i class="fas fa-chess-board"></i> DATA STRUCTURE</li>
+                        <li><i class="fas fa-lock"></i> SECURITY</li>
+                        <li><i class="fas fa-user-secret"></i> PRIVACY</li>
+                    </ul>
+                </div>
+                <div class="compTitle">
+                    &copy;seeprogramming
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="boxes">
+                    <div class="boxOne">
+                        <div class="ct-chart ct-perfect-fourth chartHEight"></div>
+                    </div>
+                    <div class="row">
+                        <div class="boxTwo">
+                            <div class="statsData">
+                                <div class="stats">
+                                    STATS
+                                </div>
+                                <div class="mainData">
+                                    <div class="count">4&#44;856</div>
+                                    <div class="cTitle">Total comments given by user on current profile.</div>
+                                    <div class="stars">
+                                        
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="positivereview">
+                                            <div class="prValue">3&#44;885</div>
+                                            <span>Positive Review</span>
+                                        </div>
+                                        <div class="negativeReview">
+                                            <div class="prValue">971</div>
+                                            <span>Negative Review</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxThree">
+                            <div class="graphData">
+                                <div class="graphTitle">
+                                    GRAPH DATA
+                                </div>
+
+                                <div class="containerOne">
+                                    <div class="containerMain">
+                                        <div id="container">
+
+                                        </div>
+                                    </div>
+                                    <div class="containerData">
+                                        <span>3&#44;885</span>
+                                        <div class="dta">Positive Reviews</div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            
+                            <div class="graphdataTwo">
+                                <div class="containerMain2">
+                                        <div id="container2">
+
+                                        </div>
+                                    </div>
+                                    <div class="containerData2">
+                                        <span>971</span>
+                                        <div class="dta2">Negative Reviews</div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="chartVendor/progressbar.js"></script>
+    <script src="chartVendor/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        var data = {
+            // A labels array that can contain any sort of values
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+            // Our series array that contains series objects or in this case series data arrays
+            series: [
+                [5, 2, 4, 2, 0]
+            ]
+        };
+
+        var options = {
+            axisX: {
+                // We can disable the grid for this axis
+                showGrid: true,
+                // and also don't show the label
+                showLabel: true,
+
+            },
+        };
+
+        // Create a new line chart object where as first parameter we pass in a selector
+        // that is resolving to our chart container element. The Second parameter
+        // is the actual data object.
+        new Chartist.Line('.ct-chart', data);
+    </script>
+
+    <script>
+        // progressbar.js@1.0.0 version is used
+        // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+        var bar = new ProgressBar.Circle(container, {
+            strokeWidth: 5,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: 'coral',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: null
+        });
+
+        bar.animate(0.65); // Number from 0.0 to 1.0
+
+        var barTwo = new ProgressBar.Circle(container2, {
+            strokeWidth: 5,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#00AEEF',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: null
+        });
+
+        barTwo.animate(0.5); // Number from 0.0 to 1.0
+    </script>
+</body>
+</html>
